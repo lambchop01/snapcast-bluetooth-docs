@@ -125,6 +125,7 @@ SBC has a bad reputation compared with other codes, but it turns out that good o
 ## Configure Pulseaudio to run as system service
 
 create puseaudio.socket and enable it
+
 create puseaudio.service and enable it
 
 enable the pulse user to stay logged in
@@ -137,12 +138,14 @@ ps -ef | grep pulse | grep systemd
 ```
 
 give user pulse access to audio group so it has access to audio hardware (/dev/snd/*)
+
 following command must be executed as user root:
 ```bash
 usermod -a -G audio pulse
 ```
 
 add to default.pa and system.pa in `/etc/pulse `
+
 change the `file=` to desired location and ensure snapcast has access to the pipe
 ```
 pacmd load-module module-pipe-sink file=/tmp/snapfifo sink_name=Snapcast format=s16le rate=48000
