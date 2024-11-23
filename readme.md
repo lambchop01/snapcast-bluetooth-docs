@@ -1,3 +1,4 @@
+Most if this is from https://github.com/spmp/promiscuous-bluetooth-audio-sinc
 # Promiscuous Bluetooth audio sinc
 
 A2DP agent for promiscuous/permissive audio sinc for Linux. Once installed, a Bluetooth client, such as a smart phone, should be able to discover, pair, and subsequently play audio without any manual interaction. This is perfect for those with headless media boxes wanting to expand their connective options and saves explaining things to the kids 8) 
